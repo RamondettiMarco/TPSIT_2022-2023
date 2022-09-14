@@ -17,6 +17,7 @@ def chatServer():
                                           #bisogna decodificarlo per avere una str)
             msg = msg[0].decode('utf8')
             print(msg)
+            
     
     
 
