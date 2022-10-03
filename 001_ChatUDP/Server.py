@@ -1,4 +1,5 @@
 from socket import socket, AF_INET, SOCK_DGRAM
+from packet import Packet
 
 BUFFER_SIZE = 1024
 #tipo "bytes" -> array di byte
@@ -21,9 +22,9 @@ def chatServer(host, port):
         while True:
             msg = s.recvfrom(BUFFER_SIZE) #arriva un bytes quindi msg è di tipo bytes, 
                                           #bisogna decodificarlo per avere una str)
-            msg = msg[0].decode('utf8')
-            print(msg)
-            
+            #msg = msg[0].decode('utf8')
+            p = Packet.from_bytes(msg[0])
+            print(f"L'username: {p.username} ha scritto il messaggio: {p.msg}")
 if __name__ == "__main__":
     host, porta = valori_input_server()
     chatServer(host, porta)

@@ -1,4 +1,5 @@
 from socket import AF_INET, SOCK_DGRAM, socket
+from packet import Packet
 
 #PORT = 5000
 #BROADCAST = "192.168.95.255"
@@ -14,10 +15,11 @@ def chatClient(ip, porta, username):
     with socket(AF_INET, SOCK_DGRAM) as s:
         while True:
             msg = input("Inserire il messaggio da inviare: ")
-            msg = f"l'utente {username.upper()} ha scritto: {msg}"
-            msg = msg.encode('utf8')
+            #msg = f"l'utente {username.upper()} ha scritto: {msg}"
+            p = Packet(username, msg)
+            #msg = msg.encode('utf8')
             #s.sendto(msg, (BROADCAST, PORT))
-            s.sendto(msg, (ip, porta))
+            s.sendto(p.to_bytes(), (ip, porta))
             
 if __name__ == "__main__":
     ip, porta, username = valori_input_client()
