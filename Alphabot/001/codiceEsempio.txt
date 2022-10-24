@@ -1,0 +1,32 @@
+"""def run(self):
+    while self.running:     #ciclo infinito del programma
+        messaggio = (self.connessione.recv(4096)).decode()          #ricevo il comando
+
+        if messaggio == 'exit':             #per chiudere il programma e scollegare i client
+            self.running = False
+
+            lista_client.remove(self)
+            
+        else:
+            print(messaggio)
+        
+            
+            if messaggio.upper().startswith("W"):
+                self.alphabot.forward()
+                time.sleep(1)        #durata del movimento
+                self.alphabot.stop()
+            if messaggio.upper().startswith("D"):
+                self.alphabot.right()
+                time.sleep(1)   
+                self.alphabot.stop()
+            if messaggio.upper().startswith("S"):
+                self.alphabot.backward()
+                time.sleep(1)   
+                self.alphabot.stop()
+            if messaggio.upper().startswith("A"):
+                self.alphabot.left()
+                time.sleep(1)   
+                self.alphabot.stop()
+            if messaggio.upper().startswith("STOP"):
+                self.alphabot.stop()
+"""
