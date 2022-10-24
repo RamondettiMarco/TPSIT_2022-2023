@@ -6,7 +6,7 @@ import socket
 import threading as thr
 import time
 
-#registered = False
+registered = False
 #nickname = ""
 
 class Receiver(thr.Thread):
