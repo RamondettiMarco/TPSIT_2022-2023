@@ -10,11 +10,11 @@ class Packet:
         self.data = data
     
     def to_bytes(self):
-        status = self.status.to_bytes(1, 'big')
+        status = self.status.to_bytes(1, 'big') #se è l'ultimo pacchetto se è nuovo NEW_FILE quindi 0, ecc -> guarda attributi classe
         size = len(self.data)
         size = size.to_bytes(2, 'big')
         
-        return status + size +self.data
+        return status + size + self.data
     
     @staticmethod
     def from_bytes(buffer):
@@ -23,12 +23,3 @@ class Packet:
         data = buffer[3:3+msg_size]
         
         return Packet(status, data)
-
-def run_tests(): #test unitari
-    pkt0 = Packet("usr", "msg")
-    pkt1 = Packet.from_bytes(pkt0.to_bytes())
-    assert(pkt0.msg == pkt1.msg)    #ad assert devo passare qualcosa di vero se no da errore
-    assert(pkt0.username == pkt1.username)
-    
-if __name__ == '__main__':
-    run_tests()

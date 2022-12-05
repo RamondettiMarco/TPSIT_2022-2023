@@ -1,8 +1,9 @@
 from socket import socket, AF_INET, SOCK_DGRAM
 from packet import Packet
-from distutils.file_util import write_file
+#from distutils.file_util import write_file
+#from pathlib import Path
 
-BUFFER_SIZE = 1024
+MAX_SIZE = 7000
 
 def valori_input_server():
     host = input("Inserire l'indirizzo IP: ")
@@ -10,21 +11,32 @@ def valori_input_server():
     
     return host, porta
 
+def write_file(buffer):
+    with open("result.pdf", "wb") as f:
+        f.write(buffer)
+
 def Server():
     with socket(AF_INET, SOCK_DGRAM) as s:
-        s.bind(("0.0.0.0", 5000))
+        s.bind(('0.0.0.0', 5000))
         file = []
+
         while True:
-            msg, address = s.recvfrom(BUFFER_SIZE)
-            packet = Packet.from_bytes(msg) 
+            msg = s.recvfrom(MAX_SIZE)
+            packet = Packet.from_bytes(msg[0])
             if packet.status == Packet.NEW_FILE:
                 file = []
+
             if packet.data and len(packet.data) > 0:
                 file.append(packet.data)
+
             if packet.status == Packet.END_FILE:
-                write_file(b''.join(file))
-            #msg.decode('utf-8')
-            #print(f"L'username: {msg[1]} ha scritto il messaggio: {msg[0]}")
+                file_completo = b''.join(file)
+                #path = Path('C:\\Users\\utente\\Desktop\\ITIS\\TPSIT\\Python').joinpath('002_InvioFileUDP/results.pdf')
+                #path.write_file(file_completo)
+                write_file(file_completo)
+                break
+
+
 if __name__ == "__main__":
     #host, porta = valori_input_server()
     Server()
