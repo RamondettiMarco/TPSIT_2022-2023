@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2c05e154e8fa426aaf0d09b57853a3e3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2c05e154e8fa426aaf0d09b57853a3e3" ></div>
+        
+</body>
+<script>    
+    
+            var map_2c05e154e8fa426aaf0d09b57853a3e3 = L.map(
+                "map_2c05e154e8fa426aaf0d09b57853a3e3",
+                {
+                    center: [44.37841724013469, 7.527509324729372],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_39da22a4424b4813966b230c2a658667 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+            var marker_7ee08fc37efe490a95b5a0b0bea509f5 = L.marker(
+                [44.37841724013469, 7.527509324729372],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_dd08fcf1ef56457da172a386876eec9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5a2b51d8c17402cb7b872f85ce42599 = $(`<div id="html_a5a2b51d8c17402cb7b872f85ce42599" style="width: 100.0%; height: 100.0%;">Itis Mario Delpozzo, Piemonte, Cuneo</div>`)[0];
+            popup_dd08fcf1ef56457da172a386876eec9a.setContent(html_a5a2b51d8c17402cb7b872f85ce42599);
+        
+
+        marker_7ee08fc37efe490a95b5a0b0bea509f5.bindPopup(popup_dd08fcf1ef56457da172a386876eec9a)
+        ;
+
+        
+    
+    
+            var marker_3360f394f1264ba6bc5f8a808e32640a = L.marker(
+                [43.082, 12.6152],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_41d8092670e6499f96851b9a25b5c59d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5306b4e2f3d4926969f241874eef044 = $(`<div id="html_f5306b4e2f3d4926969f241874eef044" style="width: 100.0%; height: 100.0%;">('Umbria', 'Complesso Benedettino di Santa Croce'), Perugia, Assisi</div>`)[0];
+            popup_41d8092670e6499f96851b9a25b5c59d.setContent(html_f5306b4e2f3d4926969f241874eef044);
+        
+
+        marker_3360f394f1264ba6bc5f8a808e32640a.bindPopup(popup_41d8092670e6499f96851b9a25b5c59d)
+        ;
+
+        
+    
+    
+            var marker_1bb7da5d301d404589c5255032fb765b = L.marker(
+                [43.062799999999996, 12.6525],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_76d69bf1ad3d49d1a0df85326609f998 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc8932b9b422418cba59d848196429a1 = $(`<div id="html_fc8932b9b422418cba59d848196429a1" style="width: 100.0%; height: 100.0%;">('Umbria', 'San Francesco'), Perugia, Assisi</div>`)[0];
+            popup_76d69bf1ad3d49d1a0df85326609f998.setContent(html_fc8932b9b422418cba59d848196429a1);
+        
+
+        marker_1bb7da5d301d404589c5255032fb765b.bindPopup(popup_76d69bf1ad3d49d1a0df85326609f998)
+        ;
+
+        
+    
+    
+            var marker_a27fb4634e2949b4abc5107f3d63ca87 = L.marker(
+                [42.978500000000004, 12.581999999999999],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_107e6c50c99a426d87f2f7cfb2f73fc5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb558ba438204015bfb50f5f13e8a78f = $(`<div id="html_cb558ba438204015bfb50f5f13e8a78f" style="width: 100.0%; height: 100.0%;">('Umbria', 'Predica agli Uccelli'), Perugia, Cannara</div>`)[0];
+            popup_107e6c50c99a426d87f2f7cfb2f73fc5.setContent(html_cb558ba438204015bfb50f5f13e8a78f);
+        
+
+        marker_a27fb4634e2949b4abc5107f3d63ca87.bindPopup(popup_107e6c50c99a426d87f2f7cfb2f73fc5)
+        ;
+
+        
+    
+    
+            var marker_fc026db812eb45f38740138589b43583 = L.marker(
+                [43.0758, 12.049800000000001],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_2f53159382274062a3ac19b4684322a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa95423dafb743fc85ae9604176647b7 = $(`<div id="html_fa95423dafb743fc85ae9604176647b7" style="width: 100.0%; height: 100.0%;">('Umbria', 'Monumento ai Caduti'), Perugia, Castiglione del lago</div>`)[0];
+            popup_2f53159382274062a3ac19b4684322a5.setContent(html_fa95423dafb743fc85ae9604176647b7);
+        
+
+        marker_fc026db812eb45f38740138589b43583.bindPopup(popup_2f53159382274062a3ac19b4684322a5)
+        ;
+
+        
+    
+    
+            var marker_24901ed9ea48424fbe41c51ed317b044 = L.marker(
+                [43.0758, 12.049800000000001],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_daf57544e02a4a6b85116f6363903167 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c48d3706b1c642f6a5b9ab2ec2deb428 = $(`<div id="html_c48d3706b1c642f6a5b9ab2ec2deb428" style="width: 100.0%; height: 100.0%;">('Umbria', 'Ai Bersaglieri'), Perugia, Citta' di castello</div>`)[0];
+            popup_daf57544e02a4a6b85116f6363903167.setContent(html_c48d3706b1c642f6a5b9ab2ec2deb428);
+        
+
+        marker_24901ed9ea48424fbe41c51ed317b044.bindPopup(popup_daf57544e02a4a6b85116f6363903167)
+        ;
+
+        
+    
+    
+            var marker_bf97b0d69d334a50ac3ea785aab4ce2f = L.marker(
+                [43.4632, 12.2539],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_1eb26d5a68b147688b614383d21e0b34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30007535a0b6428ebdfb07a46010e44f = $(`<div id="html_30007535a0b6428ebdfb07a46010e44f" style="width: 100.0%; height: 100.0%;">('Umbria', 'Venanzio Gabriotti'), Perugia, Citta' di castello</div>`)[0];
+            popup_1eb26d5a68b147688b614383d21e0b34.setContent(html_30007535a0b6428ebdfb07a46010e44f);
+        
+
+        marker_bf97b0d69d334a50ac3ea785aab4ce2f.bindPopup(popup_1eb26d5a68b147688b614383d21e0b34)
+        ;
+
+        
+    
+    
+            var marker_2ab9534dd3c74a52a3001d33ef6a9e43 = L.marker(
+                [4.3458, 12.239700000000001],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_c73c0f1ce73740ef942b7f157d75649e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_888b800fb93244959183483d51b37ff6 = $(`<div id="html_888b800fb93244959183483d51b37ff6" style="width: 100.0%; height: 100.0%;">('Umbria', 'XI Settembre 1860'), Perugia, Citta' di castello</div>`)[0];
+            popup_c73c0f1ce73740ef942b7f157d75649e.setContent(html_888b800fb93244959183483d51b37ff6);
+        
+
+        marker_2ab9534dd3c74a52a3001d33ef6a9e43.bindPopup(popup_c73c0f1ce73740ef942b7f157d75649e)
+        ;
+
+        
+    
+    
+            var marker_e028921d749342cfb7084ed5e2158879 = L.marker(
+                [42.9351, 12.8092],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_fc8bc66be832420db6a467296a29d930 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74471f8512bc4a66b44fd87f173f214b = $(`<div id="html_74471f8512bc4a66b44fd87f173f214b" style="width: 100.0%; height: 100.0%;">('Umbria', 'Civitella'), Perugia, Foligno</div>`)[0];
+            popup_fc8bc66be832420db6a467296a29d930.setContent(html_74471f8512bc4a66b44fd87f173f214b);
+        
+
+        marker_e028921d749342cfb7084ed5e2158879.bindPopup(popup_fc8bc66be832420db6a467296a29d930)
+        ;
+
+        
+    
+    
+            var marker_5b7b750e402f4c7c804c6e692821e7f3 = L.marker(
+                [42.9572, 12.706399999999999],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_dbea4c19bf9646df8a615b121d20f386 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0194ea1770484e6f86dfe2de94d24616 = $(`<div id="html_0194ea1770484e6f86dfe2de94d24616" style="width: 100.0%; height: 100.0%;">('Umbria', 'Giuseppe Garibaldi'), Perugia, Foligno</div>`)[0];
+            popup_dbea4c19bf9646df8a615b121d20f386.setContent(html_0194ea1770484e6f86dfe2de94d24616);
+        
+
+        marker_5b7b750e402f4c7c804c6e692821e7f3.bindPopup(popup_dbea4c19bf9646df8a615b121d20f386)
+        ;
+
+        
+    
+    
+            var marker_4e5d92254ada4ffc97dc8ac591eaed16 = L.marker(
+                [4.3225999999999996, 12.7913],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_c71fc854b4f1476cae6dcfdcbfea4b70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82b32aa0d8fb4ce28fda050c778aaeb5 = $(`<div id="html_82b32aa0d8fb4ce28fda050c778aaeb5" style="width: 100.0%; height: 100.0%;">('Umbria', 'Stele del Soldato'), Perugia, Gualdo tadino</div>`)[0];
+            popup_c71fc854b4f1476cae6dcfdcbfea4b70.setContent(html_82b32aa0d8fb4ce28fda050c778aaeb5);
+        
+
+        marker_4e5d92254ada4ffc97dc8ac591eaed16.bindPopup(popup_c71fc854b4f1476cae6dcfdcbfea4b70)
+        ;
+
+        
+    
+    
+            var marker_2e50c1909e6e400aaa166c7eaa3bc5bf = L.marker(
+                [43.3519, 12.5769],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_c8044115d2e84af5a9403e99fe858ab9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e57d337d6b4145e7ace0dcbd1e224ccb = $(`<div id="html_e57d337d6b4145e7ace0dcbd1e224ccb" style="width: 100.0%; height: 100.0%;">('Umbria', 'Ai Caduti nella Grande Guerra'), Perugia, Gubbio</div>`)[0];
+            popup_c8044115d2e84af5a9403e99fe858ab9.setContent(html_e57d337d6b4145e7ace0dcbd1e224ccb);
+        
+
+        marker_2e50c1909e6e400aaa166c7eaa3bc5bf.bindPopup(popup_c8044115d2e84af5a9403e99fe858ab9)
+        ;
+
+        
+    
+    
+            var marker_f25bcb153ff6496eba9be2bc5a6129cc = L.marker(
+                [43.2106, 12.5865],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_8aa24265fa2f4d36aac546cebe9f85d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fe679eebcbf4844b92d65b4a277ccb2 = $(`<div id="html_6fe679eebcbf4844b92d65b4a277ccb2" style="width: 100.0%; height: 100.0%;">('Umbria', 'Castello di Biscina'), Perugia, Gubbio</div>`)[0];
+            popup_8aa24265fa2f4d36aac546cebe9f85d6.setContent(html_6fe679eebcbf4844b92d65b4a277ccb2);
+        
+
+        marker_f25bcb153ff6496eba9be2bc5a6129cc.bindPopup(popup_8aa24265fa2f4d36aac546cebe9f85d6)
+        ;
+
+        
+    
+    
+            var marker_abf7f352dfa749df9cf2a765c59d6594 = L.marker(
+                [42.7932, 13.0928],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_0ab53150297a4d919dc2c824847fee87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31819bc91bb04569971a35a8fc651137 = $(`<div id="html_31819bc91bb04569971a35a8fc651137" style="width: 100.0%; height: 100.0%;">('Umbria', 'Monumento ai Caduti'), Perugia, Norcia</div>`)[0];
+            popup_0ab53150297a4d919dc2c824847fee87.setContent(html_31819bc91bb04569971a35a8fc651137);
+        
+
+        marker_abf7f352dfa749df9cf2a765c59d6594.bindPopup(popup_0ab53150297a4d919dc2c824847fee87)
+        ;
+
+        
+    
+    
+            var marker_4d29faad5b3745bc814fd4ca2846fca7 = L.marker(
+                [43.1058, 12.3887],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_2ca3e2f7779d4c328a479e16cdf08d7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8dce32cbb684b12849ded5966845b63 = $(`<div id="html_a8dce32cbb684b12849ded5966845b63" style="width: 100.0%; height: 100.0%;">('Umbria', 'Statua di Garibaldi'), Perugia, Perugia</div>`)[0];
+            popup_2ca3e2f7779d4c328a479e16cdf08d7a.setContent(html_a8dce32cbb684b12849ded5966845b63);
+        
+
+        marker_4d29faad5b3745bc814fd4ca2846fca7.bindPopup(popup_2ca3e2f7779d4c328a479e16cdf08d7a)
+        ;
+
+        
+    
+    
+            var marker_38aee84b85534b58b2c1e3a20cc3455d = L.marker(
+                [43.4419, 12.4372],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_dc5f6d8509a748af9b4cfc12a48c37aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13ce5e6ce07d47478119bd9e8c5a5fd3 = $(`<div id="html_13ce5e6ce07d47478119bd9e8c5a5fd3" style="width: 100.0%; height: 100.0%;">('Umbria', 'Al Partigiano Umbro'), Perugia, Pietralunga</div>`)[0];
+            popup_dc5f6d8509a748af9b4cfc12a48c37aa.setContent(html_13ce5e6ce07d47478119bd9e8c5a5fd3);
+        
+
+        marker_38aee84b85534b58b2c1e3a20cc3455d.bindPopup(popup_dc5f6d8509a748af9b4cfc12a48c37aa)
+        ;
+
+        
+    
+    
+            var marker_fefd12b6f6c54efe8703264c7bde3a92 = L.marker(
+                [43.5382, 12.1968],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_fa117e53526546bfa047a8cd8b37a3ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6669d6054054d1ea47488e7ae07ffd6 = $(`<div id="html_a6669d6054054d1ea47488e7ae07ffd6" style="width: 100.0%; height: 100.0%;">('Umbria', 'Villa Graziani'), Perugia, San giustino</div>`)[0];
+            popup_fa117e53526546bfa047a8cd8b37a3ca.setContent(html_a6669d6054054d1ea47488e7ae07ffd6);
+        
+
+        marker_fefd12b6f6c54efe8703264c7bde3a92.bindPopup(popup_fa117e53526546bfa047a8cd8b37a3ca)
+        ;
+
+        
+    
+    
+            var marker_6b917474834d4c52a3092c477943b557 = L.marker(
+                [42.880900000000004, 12.829400000000001],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_d121c4c7ecc9475584088d98c7aa359b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2ef5676c19f41a79172d66da201240a = $(`<div id="html_c2ef5676c19f41a79172d66da201240a" style="width: 100.0%; height: 100.0%;">('Umbria', 'Eremo San Paterniano'), Perugia, Sellano</div>`)[0];
+            popup_d121c4c7ecc9475584088d98c7aa359b.setContent(html_c2ef5676c19f41a79172d66da201240a);
+        
+
+        marker_6b917474834d4c52a3092c477943b557.bindPopup(popup_d121c4c7ecc9475584088d98c7aa359b)
+        ;
+
+        
+    
+    
+            var marker_3f9abc5826734e4eaa387fa484caa4d7 = L.marker(
+                [43.0179, 12.4471],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_f033115cb5364b28991aa8d151a3fc48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3426054c6aa4443a52f038cbbd68844 = $(`<div id="html_e3426054c6aa4443a52f038cbbd68844" style="width: 100.0%; height: 100.0%;">('Umbria', 'Villa La Montagnola (private house)'), Perugia, Torgiano</div>`)[0];
+            popup_f033115cb5364b28991aa8d151a3fc48.setContent(html_e3426054c6aa4443a52f038cbbd68844);
+        
+
+        marker_3f9abc5826734e4eaa387fa484caa4d7.bindPopup(popup_f033115cb5364b28991aa8d151a3fc48)
+        ;
+
+        
+    
+    
+            var marker_e7bc259bab4a479798e25f1b1f7ca237 = L.marker(
+                [42.777300000000004, 12.8676],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_b11177d6af1e47be88a687d0996db29f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be93fdb7525d49e5b1ec73607f40f737 = $(`<div id="html_be93fdb7525d49e5b1ec73607f40f737" style="width: 100.0%; height: 100.0%;">('Umbria', 'Monumento di Partigiani'), Perugia, Vallo di nera</div>`)[0];
+            popup_b11177d6af1e47be88a687d0996db29f.setContent(html_be93fdb7525d49e5b1ec73607f40f737);
+        
+
+        marker_e7bc259bab4a479798e25f1b1f7ca237.bindPopup(popup_b11177d6af1e47be88a687d0996db29f)
+        ;
+
+        
+    
+    
+            var marker_841408497d4e42b5a2db0f27ce2b646d = L.marker(
+                [42.6625, 12.2874],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_4698a72df0914fdcb5426f6ed6428c18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b89192781aad4feca89cc4afb82f0699 = $(`<div id="html_b89192781aad4feca89cc4afb82f0699" style="width: 100.0%; height: 100.0%;">('Umbria', 'Monumento ai Caduti'), Terni, Montecchio</div>`)[0];
+            popup_4698a72df0914fdcb5426f6ed6428c18.setContent(html_b89192781aad4feca89cc4afb82f0699);
+        
+
+        marker_841408497d4e42b5a2db0f27ce2b646d.bindPopup(popup_4698a72df0914fdcb5426f6ed6428c18)
+        ;
+
+        
+    
+    
+            var marker_a70cf5fff4044b6ba0c2013e191d93f6 = L.marker(
+                [4.272, 12.1202],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_05b4d18138d84db289315d5767c66461 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87be317ca7ae47f5a38e6bf890f1aeae = $(`<div id="html_87be317ca7ae47f5a38e6bf890f1aeae" style="width: 100.0%; height: 100.0%;">('Umbria', 'Monumento ai caduti'), Terni, Orvieto</div>`)[0];
+            popup_05b4d18138d84db289315d5767c66461.setContent(html_87be317ca7ae47f5a38e6bf890f1aeae);
+        
+
+        marker_a70cf5fff4044b6ba0c2013e191d93f6.bindPopup(popup_05b4d18138d84db289315d5767c66461)
+        ;
+
+        
+    
+    
+            var marker_13d3118635ac411898f5221254672d7d = L.marker(
+                [42.7267, 12.1501],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_e691be7eb8f94cddafe0ebadfaddd283 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fe2d5eee4e94d26917791466b09bb4b = $(`<div id="html_9fe2d5eee4e94d26917791466b09bb4b" style="width: 100.0%; height: 100.0%;">('Umbria', 'War Cemetery'), Terni, Orvieto</div>`)[0];
+            popup_e691be7eb8f94cddafe0ebadfaddd283.setContent(html_9fe2d5eee4e94d26917791466b09bb4b);
+        
+
+        marker_13d3118635ac411898f5221254672d7d.bindPopup(popup_e691be7eb8f94cddafe0ebadfaddd283)
+        ;
+
+        
+    
+    
+            var marker_f47109db12c248809b3569aa9113b1c5 = L.marker(
+                [4.263, 12.6004],
+                {}
+            ).addTo(map_2c05e154e8fa426aaf0d09b57853a3e3);
+        
+    
+        var popup_e0dec5b3530240598deeea69b719428d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_307171c7610c439783d7c2cc6a735180 = $(`<div id="html_307171c7610c439783d7c2cc6a735180" style="width: 100.0%; height: 100.0%;">('Umbria', 'Germinal Cimarelli'), Terni, Terni</div>`)[0];
+            popup_e0dec5b3530240598deeea69b719428d.setContent(html_307171c7610c439783d7c2cc6a735180);
+        
+
+        marker_f47109db12c248809b3569aa9113b1c5.bindPopup(popup_e0dec5b3530240598deeea69b719428d)
+        ;
+
+        
+    
+</script>
