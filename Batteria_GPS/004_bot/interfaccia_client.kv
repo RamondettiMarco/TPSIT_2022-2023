@@ -1,0 +1,77 @@
+<MainWindow>:
+    percentualeBatteria : percentualeBatteria
+    inCarica: inCarica
+    BoxLayout:
+        orientation:'vertical'
+        BoxLayout:
+            id: title
+            size_hint_y: 0.3        #occupa sempre il 20% dello schermo
+            Label:
+                canvas.before:
+                    Color:
+                        rgba:(173/255, 216/255, 230/255, 255/255)
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                color: (70/255, 130/255, 180/255, 255/255)
+                font_size: 20
+                text: "Controllo smartphone da remoto"
+        #bottone batteria
+        BoxLayout:
+            Button:
+                text: "batteria"
+                on_press: root.send("batteria")
+            Label:
+                color: 0, 0, 0, 1
+                text: "Percentuale batteria"
+            Label:
+                color: 0, 0, 0, 1
+                id: percentualeBatteria
+                text: ""
+            Label:
+                color: 0, 0, 0, 1
+                text: "In carica?"
+            Label:
+                color: 0, 0, 0, 1
+                id: inCarica
+                text: ""
+                
+        BoxLayout:
+            Button:
+                text: "bluetooth"
+                on_press: root.send("bluetooth")
+            Label:
+                color: 0, 0, 0, 1
+                text: "Stato bluetooth?"
+            Label:
+                color: 0, 0, 0, 1
+                id: statoBluetooth
+                text: ""
+        
+    BoxLayout:
+            Button:
+                text: "camera"
+            Button:
+                text: "flash"
+        BoxLayout:
+            Button:
+                text: "gps"
+            Button:
+                text: "screenshot"  
+        BoxLayout:
+            Button:
+                text: "vibration"
+            Button:
+                text: "wifi"  
+        
+        BoxLayout:
+            orientation:'vertical'
+            Button:
+                text: "visualizza"
+                on_press: root.batteria()
+        
+        BoxLayout:
+            orientation:'vertical'
+            Button:
+                text: "chiudi connessione"
+                on_press: root.send("exit")
