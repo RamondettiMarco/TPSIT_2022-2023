@@ -19,7 +19,7 @@ class Packet:
     @staticmethod
     def from_bytes(buffer):
         status = int.from_bytes(buffer[:1], 'big')
-        msg_size = int.from_bytes(buffer[1:3], 'big')
+        msg_size = int.from_bytes(buffer[1:3], 'big') # fino a 3 escluso, perché la size occupa 2 bytes dopo l'1 dello stato
         data = buffer[3:3+msg_size]
         
         return Packet(status, data)
