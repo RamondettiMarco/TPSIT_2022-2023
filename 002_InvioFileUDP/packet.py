@@ -12,7 +12,7 @@ class Packet:
     def to_bytes(self):
         status = self.status.to_bytes(1, 'big') #se è l'ultimo pacchetto se è nuovo NEW_FILE quindi 0, ecc -> guarda attributi classe
         size = len(self.data)
-        size = size.to_bytes(2, 'big')
+        size = size.to_bytes(2, 'big') # il 2 o l'1 prima si riferiscono ai bytes che dedice 
         
         return status + size + self.data
     
