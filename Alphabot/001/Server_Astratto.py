@@ -5,8 +5,8 @@
 import socket as sck
 import threading as thr
 import time
-from Alphabot1 import AlphaBot
-import RPi.GPIO as GPIO
+from Alphabot_Astratto import AlphaBot
+#import RPi.GPIO as GPIO
 #import sqlite3 #libreria data base
 
 TEMPO_PER_CURVARE_DI_90_GRADI = 0.5
@@ -50,7 +50,7 @@ def main():
     running = True
     
     connessione, indirizzo = s.accept()   #connessioni dei client
-     
+    
     #client = Classe_Thread(connessione, indirizzo, Ab)
     #mettere codice run
     while running:     #ciclo infinito del programma

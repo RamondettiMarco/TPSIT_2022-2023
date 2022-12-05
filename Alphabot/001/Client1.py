@@ -40,6 +40,7 @@ def main():
     ricev = Receiver(s) #riceve i messaggi, per far modo che il server quando rimanda il messaggio ai client arriva a tutti
     ricev.start()
 
+    #localhost = socket.gethostbyname(socket.gethostname())
     while True:
         #time.sleep(0.2) 
 
@@ -58,6 +59,9 @@ def main():
         elif(comando.upper() == 'A'): #sinistra
             print("comando ricevuto", comando)
             time.sleep(0.5)
+        elif(comando.upper() == 'RIPRENDI'): #esegue la lista di comandi precedente
+            print("comando ricevuto", comando)
+            time.sleep(0.5)
         else:
             comando = 'ESCI' #fermo
             print("comando ricevuto", comando)
@@ -66,6 +70,7 @@ def main():
         #invio del comando e della durata del movimento in secondi.
         s.sendall(comando.encode("utf-8")) #manda il messaggio al server
         s.sendall(durata.encode("utf-8"))
+        #s.sendall(localhost.encode("utf-8"))
 
         if 'exit' in comando:   #In caso si dovesse interrompere la connessione
             ricev.stop_run()    #interrompe la connessione
@@ -76,5 +81,5 @@ def main():
     s.close()
 
 if __name__ == "__main__":
-    SERVER=('192.168.0.141', 5000)
+    SERVER=('192.168.0.126', 5000)
     main()
